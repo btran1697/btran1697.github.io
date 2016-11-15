@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title>BAO-ANH TRAN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<style>
+
+#left {
+    background-color: rgb(44, 64, 89);
+    height: 1000px;
+    font-family: "Bebas Neue";
+    font-size: 350%;
+    color: rgb(181, 171, 166);
+    letter-spacing: 2.5px;
+    padding-top: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 50px;
+
+}
+
+#right {
+    background-color: rgb(239, 238, 236);
+    height: 1000px;
+    font-family: "Bebas Neue";
+    font-size: 200%;
+    color: rgb(23, 31, 39);
+    padding-top: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 50px;
+
+}
+
+</style>
+
+
+<body>
+
+  <div>
+      <div id="left" style="float: left; width: 40%; height: 100%;text-align: center">
+        <a href="#" style="text-decoration:none;">CHARCOAL</a><br>
+        <a href="#" style="text-decoration:none;">ILLUSTRATION</a><br>
+        <a href="/pages/subpages/PortraitPageNEW.html" style="text-decoration:none;">PORTRAIT PHOTOGRAPHY</a><br>
+        <a href="#" style="text-decoration:none;">MISC PHOTOGRAPHY</a>
+
+
+      </div>
+
+      <div id="right" style="float: right; width: 60%; height: 100%; display:table-cell; vertical-align:middle; text-align: center">
+          <a href="/pages/subpages/PortraitPageNEW.html">
+            <img src="/gif/portraits.gif" style="width: 50%">
+          </a>
+      </div>
+  </div>
+
+
+  <script>
+  // Script to open and close sidenav
+  function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+  // Modal Image Gallery
+  function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+  }
+
+  </script>
+
+</body>
+</html>
